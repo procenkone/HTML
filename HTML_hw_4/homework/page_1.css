@@ -1,0 +1,22 @@
+
+.wrapper{
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+}
+.a{
+    height: 150px;
+    text-align: center;
+    background: #3298F2;
+}
+.b{
+    background: #6be26b;
+    flex-grow:2;
+    height: 300px;
+    margin-right: 10px;
+}
+.c{
+    background: #292929;
+    flex-grow:1;
+    height: 300px;
+}

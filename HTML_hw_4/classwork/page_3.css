@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header, .main_left__header{
+    height:150px;
+    background: gray;
+}
+.main{
+    margin-top: 5px;
+    display: flex;
+    column-gap: 5px;
+}
+.main_left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 80%;
+}
+.main_left__content{
+    display: flex;
+    column-gap: 5px;
+}
+.main_left__item{
+    height: 300px;
+    background: gray;
+    flex-grow: 1;
+}
+.main_right{
+    flex-grow: 1;
+    background: gray;
+
+}

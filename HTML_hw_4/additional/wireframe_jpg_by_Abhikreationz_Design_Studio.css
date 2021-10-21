@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 150px;
+    background: #c0baba;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    margin-left: 40px;
+}
+.header ul{
+    display: flex;
+    margin-right: 60px;
+}
+.header li{
+    padding-right: 30px;
+    list-style-type: none
+}
+.header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+.search-block{
+    text-align: center;
+    background: #c0baba;
+    height: 250px;
+}
+.search-block h1{
+    padding-top: 2px;
+    padding-bottom: 15px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-block input{
+    margin-top:40px;
+    /*padding-top: 20px;*/
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background: white;
+    font-size: 20px;
+
+}
+.search-block input:focus{
+    outline: none;
+}
+.search-block button{
+   font-size: 20px;
+    margin-top: 40px;
+    background: white;
+    border: none;
+    margin-left: -90px;
+
+}
+.text{
+    height: 300px;
+    background: #d8d3d3;
+    text-align: center;
+}
+.text h2{
+    font-size: 40px;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+.text h3{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.text p{
+    font-size: 25px;
+}
+.container{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.item{
+    height: 150px;
+    background: #c0baba;
+
+    flex-grow: 1;
+    width: 33%;
+}
+.four{
+    width: 66%;
+}
+.sicks{
+    width: 1%;
+}
+.content{
+    text-align: center;
+    background: #d8d3d3;
+    margin-top: 5px;
+
+}
+.content h2{
+    font-size: 35px;
+    padding-top: 39px;
+    padding-bottom: 25px;
+
+}
+.content h3{
+ font-size: 25px;
+    padding-bottom: 15px;
+}
+.content p{
+    font-size: 20px;
+    padding-bottom: 15px;
+
+}
+.content button{
+    /*padding: 10px;*/
+    font-size: 15px;
+    text-align: center;
+    padding:5px 50px;
+    background: white;
+    border-radius: 8px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    background: gray;
+    margin-right: 80px;
+}
+.bottom{
+    margin-bottom: 15px;
+}
+.footer{
+    padding-top: 15px;
+    display: flex;
+    background: #c0baba;
+    justify-content: space-around;
+}
+.footer__item p{
+    margin-top: 5px;
+}

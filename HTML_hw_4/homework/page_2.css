@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30px;
+}
+
+.header{
+    background: #3298F2;
+    height: 50px;
+}
+.nav{
+    background: #04114f;
+    height: 50px;
+}
+.container{
+    display: flex;
+}
+.main{
+    flex-grow: 3;
+    background: #6be27a;
+    height: 400px;
+}
+.aside{
+    flex-grow: 1;
+    background: #512666;
+    height: 400px;
+
+}
+.footer{
+    background: #0883f0;
+    height: 50px;
+}
+

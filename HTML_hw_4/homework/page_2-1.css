@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.header{
+    height: 80px;
+    background: yellow;
+}
+
+.section{
+    display: flex;
+}
+.menu{
+    height: 300px;
+    background: #512666;
+    flex-grow: 1;
+    margin: 5px;
+
+}
+.post-wrap{
+    flex-direction: column;
+    flex-grow: 3;
+}
+.post{
+    height: 150px;
+    background: #3298F2;
+    margin: 5px;
+}
+.footer{
+    height: 80px;
+    background: yellow;
+}

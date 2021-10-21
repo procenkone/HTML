@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.widgets{
+    background: #3298F2;
+    height: 100px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+
+}
+.box{
+    background: #512666;
+    flex-grow: 1;
+    height: 200px;
+    margin: 5px;
+}
+.contact{
+    background: #3298F2;
+    height: 500px;
+}

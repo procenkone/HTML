@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header, .footer{
+    height: 150px;
+    background: #3298F2;
+
+}
+.content{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.item{
+    height: 150px;
+    background: #512666;
+    flex-grow: 1;
+    align-items: flex-start;
+
+}
+
+.one{
+    width: 30%;
+    flex-grow: 1;
+}
+.two{
+    width: 60%;
+    flex-grow: 3;
+    height: 300px;
+}
+.three{
+    width: 30%;
+    flex-grow: 1;
+    height: 300px;
+    margin-top:-150px;
+}
+.four{
+    width: 60%;
+    flex-grow: 3;
+}
+.five{
+    width: 60%;
+    flex-grow: 3;
+}
+.sicks{
+    width: 30%;
+    flex-grow: 1;
+}
