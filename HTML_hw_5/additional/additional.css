@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #dbdada;
+}
+.d-flex{
+    display: flex;
+}
+.t-align{
+    text-align: center;
+}
+.j-content-center{
+    justify-content: center;
+}
+.j-content-s-a{
+    justify-content: space-around;
+}
+.a-items-center{
+    align-items: center;
+}
+.bg-light{
+    background: #dbdada;
+}
+.bg-dark-blue{
+    background: #05055a;
+}
+.bg-purple{
+    background: #924592;
+}
+.border{
+    border: 2px solid black;
+}
+.header{
+    height:100px;
+}
+.b-radius{
+    border-radius: 20px;
+}
+.header__block{
+    height: 70px;
+    width: 180px;
+}
+.header img{
+    height: 40px;
+    margin-left: 20px;
+}
+.header-bottom{
+    flex-direction: column;
+    color:  #924592;
+    height: 500px;
+}
+.header-bottom h1{
+    padding-top: -1000px;
+}
+.header-bottom__block{
+    height: 30px;
+    width: 120px;
+    margin: 50px 0;
+}
+.header-bottom-items{
+    gap: 25px;
+    margin-top: -100px;
+}
+.header-bottom-items__item{
+    height: 200px;
+    width: 200px;
+}
+.title{
+    color: #05055a;
+}
+.title h2{
+    font-size: 35px;
+    margin: 35px 0;
+}
+.content-items__item_block{
+    height: 150px;
+    width: 150px;
+}
+.content-items{
+    margin: 30px auto;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 49%;
+    gap: 25px;
+
+}
+.content-items p{
+ font-size: 25px;
+}
+.long-items__item_item{
+    width: 300px;
+    height: 150px;
+}
+.long-items{
+    margin: 30px auto;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 25px;
+    width: 49%;
+}
+.long-items p{
+    font-size: 35px;
+}
+.pagination__item{
+    height: 150px;
+    width: 250px;
+}
+.pagination{
+    gap: 25px;
+}
+.pagination img{
+    height: 163px;
+}
+.footer{
+    gap: 5px;
+}
+.footer__item{
+    margin: 50px 0;
+    width: 70px;
+    height: 70px;
+}
+.lite-block{
+    margin-top: -37px;
+    height: 8px;
+    width: 50px;
+    margin-left: 15px;
+}
+.worker-description{
+    margin: 50px 0;
+}
+.worker-description__photo{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    /*flex-grow: 1;*/
+}
+.worker-description_description{
+    /*flex-grow: 2;*/
+    margin-left: -700px;
+    font-size: 25px;
+}
