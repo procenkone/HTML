@@ -197,5 +197,126 @@
     width: 300px;
 }
 
+@media screen and (max-width: 580px) {
+    .header {
+        display: none;
+    }
 
+    .header__bottom_block {
+        height: 40px;
+        width: 100px;
+    }
+
+    .link {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .top-content h1{
+        font-size: 45px;
+    }
+
+    .top-content-next {
+        margin: 30px 5px;
+    }
+
+    .top-content-next__items {
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .top-content-next__items_item {
+        flex-grow: 1;
+    }
+
+    .person-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_item__item {
+        height: 250px;
+        width: 350px;
+    }
+
+    .card_item p {
+        font-size: 25px;
+    }
+    .card_item button {
+        width: 80px;
+        height: 30px;
+    }
+    .left-right{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 580px) and (max-width: 959px){
+    .link{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .header__bottom_block {
+        height: 50px;
+        width: 200px;
+    }
+    .top-content h1{
+        font-size: 50px;
+    }
+    .top-content-next {
+        margin: 30px 5px;
+    }
+    .top-content-next h3{
+        font-size: 50px;
+    }
+
+    .top-content-next__items {
+        flex-direction: column;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .top-content-next__items_item {
+        flex-grow: 1;
+        width: 350px;
+        height: 350px;
+    }
+    .person-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .person-block p{
+        margin: 0 auto;
+        font-size: 35px;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .card_item__item {
+        height: 250px;
+        width: 350px;
+    }
+
+    .card_item p {
+        font-size: 25px;
+    }
+    .card_item button {
+        width: 80px;
+        height: 30px;
+    }
+    .left-right{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-right h2{
+        font-size: 30px;
+    }
+    .left-right p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+
+}
 
