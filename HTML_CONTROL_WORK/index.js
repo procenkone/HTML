@@ -20,23 +20,142 @@ closeForm.addEventListener('click', () => {
     setTimeout("managerCallYou.classList.add('d-none')", 3000);
 })//закриття модального вікна зворотнього звязку
 
-fetch('http://localhost:63342/HTML/HTML_CONTROL_WORK/card.json')
-    .then(response => response.json())
-    .then(card => {
-            showCardItems(card)
-        }
-    )//отримуєм данні з товарами
-fetch('http://localhost:63342/HTML/HTML_CONTROL_WORK/news.json')
-    .then(response => response.json())
-    .then(newsData => {
-            showNewsItem(newsData)
-        }
-    )//отримуєм данні з новинами
+const cardData = [
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    }
+]//отримуєм данні з товарами
+const newsData = [
+    {
+        "dateP": "3 ноября",
+        "news_item__oneA": "Изменения на сайте",
+        "news_item__one___description": "очередную порцию изменений, которые, как нам кажется, должны улучшить функциональность сайта и сделать его более удобным для пользователей. Реакция посетителей не заставила себя долго ждать..."
+    },
+    {
+        "dateP": "2 ноября",
+        "news_item__oneA": "Вышла новая версия для мобильных приложений",
+        "news_item__one___description": "Что нового в 2.0: — добавлена история поиска; — добавлена синхронизация с сервером; — испрвление ошибок."
+    },
+    {
+        "dateP": "1 ноября",
+        "news_item__oneA": "Очередная порция обновлений для мобильных приложений",
+        "news_item__one___description": "Что нового добавлено: — поддержка пуш-уведомлений; — разделы для покупателей; — просмотр покупателя в заказах; — возможность поиска; — исправление ошибок."
+    },
+    {
+        "dateP": "31 октября",
+        "news_item__oneA": "Интерфейс заказов для покупателей стал более функциональным",
+        "news_item__one___description": "Он позволяет выводить все формируемые системой уведомления(e-mail, смс, web) в едином окне с системой удобной фильтрации поиска."
+    }
+]//отримуєм данні з новинами
+
+
+
 let cardsContainer = document.querySelector('.cards')//батьківський тег з товарами
 let news = document.querySelector('.news')//батьківський тег з новинами
 
-function showCardItems(card) {
-    card.map(item => {
+function showCardItems() {
+    cardData.map(item => {
         let cardsItem = document.createElement('div')
         cardsItem.classList.add('cards_item')
         cardsItem.classList.add('d-flex')
@@ -68,7 +187,7 @@ function showCardItems(card) {
     })
 
 }//виводим товари
-function showNewsItem(newsData){
+function showNewsItem(){
     newsData.map(item=>{
         let newsItem = document.createElement('div')
         newsItem.classList.add('news_item__one')
@@ -86,3 +205,5 @@ function showNewsItem(newsData){
         news.appendChild(newsItem)
     })
 }//виводим новини
+showCardItems()// запускаєм фунцію відображення товарів
+showNewsItem()// запускаєм фунцію відображення новин
