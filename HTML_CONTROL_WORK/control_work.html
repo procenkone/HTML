@@ -15,19 +15,45 @@
     <div class="header_nav mw-1550 bg-header container pt-2 pb-2 d-flex justify-content-start justify-content-sm-around ">
         <div class="header_nav__left d-flex align-items-center c-g-20 ">
             <img src="./image/location.png" alt="location">
-            <a href="#" class="header_nav__text___options">Ваш город: Москва</a>
+            <a href="#" class="header_nav__text___options">Ваш город: </a>
+            <a class="chengeCiti header_nav__text___options" href="#">Москва</a>
+
+
+            <div class="header_nav__left___cities d-none ">
+                <div class="d-flex flex-column align-items-center pt-3 justify-content-center c-g-20">
+                    <div class="logo_number__form___header d-flex pb-2 ">
+                        <p class="">Выберите свой город</p>
+                        <img class="closeFormCiti" src="./image/closeIcon.png" alt="closeIcon">
+                    </div>
+                    <input type="text" placeholder="Ваш город">
+                </div>
+                <div class="d-flex flex-column pl-4 pt-3 ">
+                    <a href="#">Москва</a>
+                    <a href="#">Санкт-Петербург</a>
+                    <a href="#">Краснодар</a>
+                    <a href="#">Екатеринбург</a>
+                    <a href="#">Ростов-на-Дону</a>
+                    <a href="#">Самара</a>
+                </div>
+            </div>
+
+
             <div class="info d-flex align-items-center c-g-10 ">
-                <a href="#" class="header_nav__text___options mobile d-block d-sm-none">Еще</a>
-                <img class="img_Chevron" src="./image/ChevronBottom%201.png" alt="ChevronBottom">
+                <select class="bg-header header_nav__text___options mobile d-block d-sm-none" name="select">
+                    <option value="value1">Санкт-Петербург</option>
+                    <option value="value2" selected>Еще</option>
+                </select>
             </div>
-            <div class="info  d-none d-sm-flex align-items-center c-g-10 ">
-                <a href="#" class="header_nav__text___options">Информация</a>
-                <img class="img_Chevron" src="./image/ChevronBottom%201.png" alt="ChevronBottom">
-            </div>
-            <div class="info  d-none d-sm-flex align-items-center c-g-10">
-                <a href="#" class="header_nav__text___options">Сотрудничество</a>
-                <img class="img_Chevron" src="./image/ChevronBottom%201.png" alt="ChevronBottom">
-            </div>
+
+            <select class="bg-header select_info d-none d-sm-flex align-items-center c-g-10" name="select">
+                <option value="value1">Санкт-Петербург</option>
+                <option value="value2" selected>Информация</option>
+            </select>
+
+            <select class="bg-header select_work d-none d-sm-flex align-items-center c-g-10" name="select">
+                <option value="value1">Санкт-Петербург</option>
+                <option value="value2" selected>Сотрудничество</option>
+            </select>
         </div>
         <div class="header_nav__right d-none d-sm-flex align-items-center c-g-20">
             <a class="header_nav__text___options" href="#">Доставка</a>
@@ -85,7 +111,20 @@
 
     <div class="logo_number d-none d-sm-flex flex-column align-items-end justify-content-center ">
         <h3>+7 383 291 92 86</h3>
-        <p>форма обратной связи</p>
+        <p class="click_form__call">форма обратной связи</p>
+    </div>
+    <div class="logo_number__form  d-none flex-column c-g-20">
+        <div class="logo_number__form___header d-flex ">
+            <p>Заказать звонок</p>
+            <img class="close_form__call" src="./image/closeIcon.png" alt="closeIcon">
+        </div>
+        <input type="text" placeholder="Ваше имя">
+        <input type="tel" placeholder="Номер телефона">
+        <button class="logo_number__form___btn">Заказать звонок</button>
+    </div>
+    <div class="manager_call__you d-none">
+        <p>Заявка на обратную связь прошла успешно!
+        Менеджер свяжется в Вами в течении 5 минут.</p>
     </div>
 
 
@@ -102,6 +141,7 @@
         </div>
     </div>
 
+
 </div>
 <div class="header_bottom__panel pb-4 container d-none d-sm-flex align-items-center justify-content-around mw-1550  pt-4 c-g-30">
     <div class="d-flex header_bottom__panel___search align-items-center justify-content-around c-g-20">
@@ -115,20 +155,19 @@
         </div>
     </div>
     <div class="header_bottom__panel___right d-flex align-items-center justify-content-between c-g-30">
-        <div class="login d-flex align-items-center ">
+        <div class="login d-flex align-items-center c-p ">
             <img src="./image/loginIcon.png" alt="loginIcon">
             <p class="mb-0">Войти</p>
             <img class="pl-4" src="./image/vertycalLine.png" alt="vertycalLine">
         </div>
 
-        <div class="like d-flex align-items-center ">
+        <div class="like d-flex align-items-center c-p ">
             <img src="./image/like.png" alt="like">
             <p class="mb-0">Избранное</p>
             <img class="pl-4" src="./image/vertycalLine.png" alt="vertycalLine">
-
         </div>
 
-        <div class="header_bottom__panel___right-cart d-flex align-items-center ">
+        <div class="header_bottom__panel___right-cart d-flex align-items-center c-p ">
             <img src="./image/cart.png" alt="cart">
             <p class="mb-0 ">В корзине
                 нет товаров</p>
@@ -148,23 +187,23 @@
 </div>
 <div class="slider_top d-flex align-items-center flex-wrap justify-content-center pt-5  mw-1550">
     <div class="slider_top__slider ">
-                <div class="slider_top__slider___options  d-flex align-items-center">
-                    <img class="slider_top__slider___options-arrow" src="./image/arrowLeft.png" alt="arrowLeft">
-                    <div class="slider_top__slider___options-title d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="pl-3">Сцепление в сборе</h2>
-                        <span>0AMCLUTCH</span>
-                        <div class="slider_top__slider___options-title">
-                            <p class="new_cost">14 499,99 ₽</p>
-                            <p class="before_cost">18 550,99 ₽ </p>
-                        </div>
-                        <div class="slider_top__slider___options-title-block d-flex align-items-center justify-content-around">
-                            <img  class="" src="./image/cartWhite.png" alt="cartWhite">
-                            <p class="mb-0"> В корзину</p>
-                        </div>
-                    </div>
-                    <img class="itemProduct3" src="./image/itemProduct3.png" alt="itemProduct3">
-                    <img class="slider_top__slider___options-arrow" src="./image/arrowRigft.png" alt="arrowRigft">
+        <div class="slider_top__slider___options  d-flex align-items-center justify-content-between">
+            <img class="slider_top__slider___options-arrow" src="./image/arrowLeft.png" alt="arrowLeft">
+            <div class="slider_top__slider___options-title d-flex flex-column ">
+                <h2 >Сцепление в сборе</h2>
+                <span>0AMCLUTCH</span>
+                <div class="slider_top__slider___options-title d-flex align-items-center c-g-20">
+                    <p class="new_cost">14 499,99 ₽</p>
+                    <p class="before_cost">18 550,99 ₽ </p>
                 </div>
+                <div class="slider_top__slider___options-title-block d-flex align-items-center justify-content-around">
+                    <img class="" src="./image/cartWhite.png" alt="cartWhite">
+                    <p class="mb-0"> В корзину</p>
+                </div>
+            </div>
+            <img class="itemProduct3" src="./image/itemProduct3.png" alt="itemProduct3">
+            <img class="slider_top__slider___options-arrow" src="./image/arrowRigft.png" alt="arrowRigft">
+        </div>
     </div>
     <div class="slider_top_card d-flex  flex-sm-column align-items-center">
         <div class="slider_top__card___item d-flex   ">
@@ -225,9 +264,9 @@
         <p>Профиль</p>
     </div>
 </div>
-<div class="slider_bottom pt-3 d-flex justify-content-around align-items-center">
+<div class="slider_bottom pt-3 d-flex justify-content-around mw-1550 m-auto align-items-center">
     <div class="slider_bottom__item d-flex   align-items-center justify-content-around">
-        <img  class="slider_bottom__item___arrow"  src="./image/arrowLeft.png" alt="arrowLeft">
+        <img class="slider_bottom__item___arrow" src="./image/arrowLeft.png" alt="arrowLeft">
 
         <div class="slider_bottom__item___title pl-2 d-flex flex-column">
             <h3>Масла</h3>
@@ -235,7 +274,7 @@
                 присалка в масло акпп</p>
             <div class="pl-2">Перейти</div>
         </div>
-        <img  src="./image/itemProduct4.png" alt="itemProduct4">
+        <img src="./image/itemProduct4.png" alt="itemProduct4">
     </div>
     <div class="slider_bottom__item d-flex  align-items-center justify-content-around">
         <div class="slider_bottom__item___title pl-3 d-flex flex-column">
@@ -279,7 +318,7 @@
         </div>
         <div class=" btn-bottom d-flex c-g-30 align-items-center">
             <div class="button_block d-flex align-items-center justify-content-center">
-                <img src="./image/cartWhiteIcon.png" alt="cartWhiteIcon">
+                <img  src="./image/cartWhiteIcon.png" alt="cartWhiteIcon">
                 <p class="mb-0 pl-1">В корзину</p>
             </div>
             <img class="likeBlue" src="./image/likeBlue.png" alt="likeBlue">
@@ -434,16 +473,125 @@
         </div>
     </div>
 </div>
+<div class="show_more d-flex justify-content-center  ">
+    <button class="show_more__btn">Показать еще</button>
+</div>
+<div class="news container flex-wrap flex-sm-nowrap mw-1550 d-flex justify-content-around align-items-start c-g-20 ">
+    <div class="news_item__one d-flex flex-column ">
+        <div class="date">
+            <p>3 ноября</p>
+        </div>
+        <a href="#">Изменения на сайте</a>
+        <p class="news_item__one___description">Недавно на сайте мы ввели
+            очередную порцию изменений,
+            которые, как нам кажется, должны
+            улучшить функциональность сайта
+            и сделать его более удобным для
+            пользователей. Реакция посетителей
+            не заставила себя долго ждать...</p>
+    </div>
+    <div class="news_item__one d-flex flex-column">
+        <div class="date">
+            <p>2 ноября</p>
+        </div>
+        <a href="#">Вышла новая версия для
+            мобильных приложений</a>
+        <p class="news_item__one___description">Что нового в 2.0:
+            — добавлена история поиска;
+            — добавлена синхронизация с сервером;
+            — испрвление ошибок.</p>
+    </div>
+    <div class="news_item__one d-flex flex-column">
+        <div class="date">
+            <p>1 ноября</p>
+        </div>
+        <a href="#">Очередная порция обновлений для
+            мобильных приложений</a>
+        <p class="news_item__one___description">Что нового добавлено:
+            — поддержка пуш-уведомлений;
+            — разделы для покупателей;
+            — просмотр покупателя в заказах;
+            — возможность поиска;
+            — исправление ошибок.</p>
+    </div>
+    <div class="news_item__one d-flex flex-column">
+        <div class="date">
+            <p>31 октября</p>
+        </div>
+        <a href="#">Интерфейс заказов для покупателей
+            стал более функциональным</a>
+        <p class="news_item__one___description">Он позволяет выводить все
+            формируемые системой
+            уведомления(e-mail, смс, web) в
+            едином окне с системой удобной
+            фильтрации поиска.</p>
+    </div>
 
+</div>
+<footer class="footer container-fluid  ">
+    <div class="footer_content d-flex justify-content-around flex-wrap mw-1550 c-g-20 ">
+        <div class="footer_content__item d-flex flex-column">
+            <h3>КАТАЛОГ</h3>
+            <a href="#">Каталог запчастей</a>
+            <a href="#">Масла</a>
+            <a href="#">Фильтра</a>
+            <a href="#">Радиаторы</a>
+            <a href="#">Sonnax</a>
+            <a href="#">Manual</a>
+            <a href="#">Новинки</a>
+            <a href="#">Акции</a>
+        </div>
+        <div class="footer_content__item d-flex flex-column">
+            <h3>РУБРИКАТОР</h3>
+            <a href="#">Доставка</a>
+            <a href="#">Оплата</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Новости</a>
+            <a href="#">Журнал</a>
+            <a href="#">О магазине</a>
+            <a href="#">Контактная информация</a>
+        </div>
+        <div class="footer_content__item d-flex flex-column">
+            <h3>ИНФОРМАЦИЯ</h3>
+            <a href="#">Пользовательское соглашение
+                об использовании персональных данных</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Соглашение на рассылку
+                рекламных материалов</a>
+            <a href="#">Политика возвратов</a>
+            <a href="#">Мы принимаем</a>
+            <img src="./image/visa.png" alt="visa">
 
-
-
-
-
-
-
-
-
+        </div>
+        <div class="footer_content__item d-flex flex-column">
+            <h3>КОНТАКТЫ</h3>
+            <p>+7 383 291 92 86</p>
+            <p>info@avt-zap.ru</p>
+            <span>Мы онлайн, воспользуйтесь</span>
+            <span>Подпишитесь на нашу расслыку и 
+вы первыми узнаете о скидках и акциях</span>
+            <div class="d-flex mt-4">
+                <input type="text" placeholder="Введите ваш email">
+                <button>Подписаться</button>
+            </div>
+            <div class="soc d-flex justify-content-between mt-4 mb-4">
+                <img class="facebook" src="./image/facebook.png" alt="facebook">
+                <img class="twitter" src="./image/tvitter.png" alt="tvitter">
+                <img class="telegram" src="./image/telegramm.png" alt="telegramm">
+                <img class="google-plus" src="./image/google-plus.png" alt="google-plus">
+            </div>
+        </div>
+        <div class="footer_content__item d-flex flex-column">
+            <h3>АДРЕС</h3>
+            <p>г. Новосибирск,
+                ул. Планировочная, 5, офис 105</p>
+            <p>Форма обратной связи</p>
+        </div>
+    </div>
+    <div class="header_bottom pb-2 pl-5">
+        <p>2017 © ООО «АВТ-ЗАП» - запчасти для акпп</p>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -454,5 +602,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
 </html>
