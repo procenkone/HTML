@@ -569,6 +569,10 @@
 
 }
 
+.cards{
+    height: 974px;
+    overflow-y:hidden ;
+}
 .cards_item .star img {
     width: 16px;
     height: 16px;

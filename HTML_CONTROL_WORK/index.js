@@ -12,8 +12,8 @@ closeFormCiti.addEventListener('click', () => {
     formCiti.classList.add('d-none')
 })//закриття модального вікна вибору міста
 callForm.addEventListener('click', () => {
-        showForm.classList.add('d-flex')
-    })//відкриття модального вікна  зворотнього звязку
+    showForm.classList.add('d-flex')
+})//відкриття модального вікна  зворотнього звязку
 closeForm.addEventListener('click', () => {
     showForm.classList.remove('d-flex')
     managerCallYou.classList.remove('d-none')
@@ -21,6 +21,214 @@ closeForm.addEventListener('click', () => {
 })//закриття модального вікна зворотнього звязку
 
 const cardData = [
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardImg1.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
+    {
+        "cardImg": "./image/cardItem2.png",
+        "starImg": "./image/Star.png",
+        "starSpan": "4.5",
+        "starP": "10 отзывов",
+        "cards_itemP": "Intermediate accumelator sleeve",
+        "costP": "ЦЕНА",
+        "costSpan": "по запросу",
+        "button_blockImg": "./image/cartWhiteIcon.png",
+        "button_blockP": "В корзину",
+        "btnBottomLikeBlue": "./image/likeBlue.png",
+        "btnBottomReytingIcon": "./image/reytingIcon.png"
+    },
     {
         "cardImg": "./image/cardImg1.png",
         "starImg": "./image/Star.png",
@@ -150,7 +358,6 @@ const newsData = [
 ]//отримуєм данні з новинами
 
 
-
 let cardsContainer = document.querySelector('.cards')//батьківський тег з товарами
 let news = document.querySelector('.news')//батьківський тег з новинами
 
@@ -187,13 +394,13 @@ function showCardItems() {
     })
 
 }//виводим товари
-function showNewsItem(){
-    newsData.map(item=>{
+function showNewsItem() {
+    newsData.map(item => {
         let newsItem = document.createElement('div')
         newsItem.classList.add('news_item__one')
         newsItem.classList.add('d-flex')
         newsItem.classList.add('flex-column')
-        newsItem.innerHTML=`
+        newsItem.innerHTML = `
          <div class="date">
             <p>${item.dateP}</p>
         </div>
@@ -205,5 +412,36 @@ function showNewsItem(){
         news.appendChild(newsItem)
     })
 }//виводим новини
+
+let card = document.querySelector('.cards')// батько блоку з карточками товару
+document.querySelector('.show_card').onclick = showCardsMore//кнопка показати більше
+let btnUp = document.querySelector('.up')//кнопка вверх
+let btnNone = document.querySelector('.btn-none')// також кнопка показати більше але вона для зміни класу, бо чомусь не можу повісити дію на попередню
+
 showCardItems()// запускаєм фунцію відображення товарів
 showNewsItem()// запускаєм фунцію відображення новин
+let height = 974//початкова висота блоку для відображення карточок товару
+
+function showCardsMore() {
+    card.style.height = height + 484 + 'px'
+    height = height + 484
+    if (card.style.height > 1000 + 'px') {
+        btnUp.classList.remove('d-none')
+        btnUp.classList.add('d-block')
+
+    }
+    if (card.style.height > 2850 + 'px') {
+        btnNone.classList.remove('d-block')
+        btnNone.classList.add('d-none')
+
+    }
+
+}//функція показати більше товарів
+
+btnUp.addEventListener('click', () => {
+    scroll(0, 0)
+    card.style.height = 974 + 'px'
+    btnNone.classList.remove('d-none')
+    btnNone.classList.add('d-block')
+    height = 974
+})//функція догори
