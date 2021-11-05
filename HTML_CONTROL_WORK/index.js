@@ -435,7 +435,6 @@ function showCardsMore() {
         btnNone.classList.add('d-none')
 
     }
-
 }//функція показати більше товарів
 
 btnUp.addEventListener('click', () => {
@@ -445,3 +444,24 @@ btnUp.addEventListener('click', () => {
     btnNone.classList.add('d-block')
     height = 974
 })//функція догори
+
+const sliderBottom = document.querySelector('.slider_bottom')// бальківський слайдера
+let widhtSlider = 0//початкове положення слайдера
+let sliderMoveRight = document.querySelector('.right')//кнопка право
+let sliderMoveLeft = document.querySelector('.left')// кнопка ліво
+sliderMoveRight.addEventListener('click', () => {
+    widhtSlider = widhtSlider + 500
+    if (widhtSlider > 1500) {
+        widhtSlider = 0
+    }
+    sliderBottom.style.left = -widhtSlider + 'px'
+
+})// функція прокрутки вправо
+sliderMoveLeft.addEventListener('click', () => {
+    widhtSlider = widhtSlider - 500
+    if (widhtSlider < 0) {
+        widhtSlider = 1500
+    }
+    sliderBottom.style.left = -widhtSlider + 'px'
+
+})// функція прокрутки вліво
