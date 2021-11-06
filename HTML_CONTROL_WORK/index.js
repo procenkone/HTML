@@ -465,3 +465,24 @@ sliderMoveLeft.addEventListener('click', () => {
     sliderBottom.style.left = -widhtSlider + 'px'
 
 })// функція прокрутки вліво
+
+
+let sliderTop = document.querySelector('.slider_top__moov')//батьківський слайдер
+const btnSliderLeft = document.querySelector('.arrow_left')//кнопка наліво
+const btnSliderRight = document.querySelector('.arrow_right')//кнопка направо
+let widhtSliderTop = 0
+btnSliderLeft.addEventListener('click', ()=>{
+    widhtSliderTop = widhtSliderTop - 1100
+    if(widhtSliderTop < 0){
+        widhtSliderTop = 3300
+    }
+    sliderTop.style.left = -widhtSliderTop+'px'
+
+})
+btnSliderRight.addEventListener('click', ()=>{
+    widhtSliderTop = widhtSliderTop + 1100
+    if(widhtSliderTop > 3300){
+        widhtSliderTop = 0
+    }
+    sliderTop.style.left = -widhtSliderTop+'px'
+})
