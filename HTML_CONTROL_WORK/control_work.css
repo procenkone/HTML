@@ -1086,5 +1086,9 @@
     }
     .slider_top__slider___options-title {
     }
+    .slider_top__mobile{
+        width: 100%;
+        padding: 0 10px;
+    }
 
 }
