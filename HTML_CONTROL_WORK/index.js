@@ -470,7 +470,7 @@ sliderMoveLeft.addEventListener('click', () => {
 let sliderTop = document.querySelector('.slider_top__moov')//батьківський слайдер
 const btnSliderLeft = document.querySelector('.arrow_left')//кнопка наліво
 const btnSliderRight = document.querySelector('.arrow_right')//кнопка направо
-let widhtSliderTop = 0
+let widhtSliderTop = 0//початкове положення верхнього слайдеру
 btnSliderLeft.addEventListener('click', ()=>{
     widhtSliderTop = widhtSliderTop - 1100
     if(widhtSliderTop < 0){
@@ -478,11 +478,11 @@ btnSliderLeft.addEventListener('click', ()=>{
     }
     sliderTop.style.left = -widhtSliderTop+'px'
 
-})
+})//функція прокрутки вліво
 btnSliderRight.addEventListener('click', ()=>{
     widhtSliderTop = widhtSliderTop + 1100
     if(widhtSliderTop > 3300){
         widhtSliderTop = 0
     }
     sliderTop.style.left = -widhtSliderTop+'px'
-})
+})//функція прокрутки вправо
